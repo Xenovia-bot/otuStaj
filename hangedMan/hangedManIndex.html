@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Asmaca</title>
+    <link rel="stylesheet" href="hangedManStyle.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>Adam Asmaca</h1>
+            <p id="hint"></p>
+        </div>
+        
+        <div class="alphabet" id="alphabet">
+        </div>
+
+        <div class="game-status">
+            <div class="hangman">
+                <img src="hangman-0.svg" id="hangman-img">
+            </div>
+
+            <div class="hearts" id="hearts">
+            </div>
+        </div>
+
+        <div id="word"></div>
+
+        <div class="game-controls">
+            <button id="guess-button">Kelimeyi Tahmin Et</button>
+        </div>
+
+        <div id="game-result" class="game-result">
+            <div class="result-content">
+                <h2 id="result-text"></h2>
+                <p id="correct-word"></p>
+                <button id="play-again">Tekrar Oyna</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="hangedManScript.js"></script>
+</body>
+</html>
