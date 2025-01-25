@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Oyun genel stili */
+#game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Seçim butonları için Flex düzeni */
+#choices {
+    display: flex;
+    flex-wrap: wrap; /* Küçük ekranlarda satır kaydırma */
+    justify-content: center;
+    gap: 15px; /* Butonlar arasında boşluk */
+    margin: 20px 0;
+}
+
+/* Buton tasarımı */
+.choice {
+    font-size: 24px; /* Yazı boyutu */
+    padding: 30px 80px; /* İç dolgu */
+    border: 2px solid #333; /* Çerçeve */
+    border-radius: 10px; /* Yuvarlatılmış köşeler */
+    background-color: #f0f0f0; /* Arka plan rengi */
+    color: #333; /* Yazı rengi */
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s; /* Animasyon */
+    flex: 1 1 120px; /* Esneklik: min 120px genişlik */
+    max-width: 200px; /* Maksimum genişlik */
+    text-align: center;
+}
+#result{
+    font-size: 30px;
+    
+
+}
+#winner{
+    color: #fd0505;
+
+
+}
+
+/* Hover ve aktif durumlar uzerine gelindiginde goster bana*/
+.choice:hover {
+    background-color: #ddd;
+    transform: scale(1.1);
+}
+
+.choice:active {
+    background-color: #ccc;
+    transform: scale(1);
+}
